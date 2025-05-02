@@ -21,19 +21,17 @@
 				</div>
 				<div class="form-control">
 					<label for="people">People</label>
-					<input
-						type="number"
-						id="people"
-						step="1"
-						min="0"
-						max="10"
-					/>
+					<input type="number" id="people" step="1" min="1" max="10" />
 				</div>
 				<button type="submit">ADD PROJECT</button>
 			</form>
 		</template>
 		<template id="single-project">
-			<li></li>
+			<li draggable="true">
+				<h2></h2>
+				<h3></h3>
+				<p></p>
+			</li>
 		</template>
 		<template id="project-list">
 			<section class="projects">
