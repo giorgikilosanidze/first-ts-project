@@ -37,7 +37,7 @@ export class ProjectInput {
 		const projectData = validation(
 			this.title.value,
 			this.description.value,
-			this.people.valueAsNumber
+			+this.people.value
 		);
 		if (projectData) {
 			new ProjectItem(projectData);
