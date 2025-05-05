@@ -1,6 +1,6 @@
-import { ProjectItem } from './project.item.js';
-import { autoBind } from '../decorators/autobind.js';
-import { validation } from '../utility/validation.js';
+import prjItem from './project.item.js'; // es default exportis shemoimporteba roca xdeba.
+import { autoBind as Autobind } from '../decorators/autobind.js'; // es saxelis gadarkmevaa.
+import * as validate from '../utility/validation.js'; // ak validacia isedac erti funkciaa marto mara ramdenime rame ro kopiliko shemosaimportebeli es gamodgeboda. kvelapers aimporteb saxels arkmev rasac ginda da wertilit wvdebi mere konkretul funkcias an nebismier ragacas. kvemot weria validate funkciaze magaliti.
 
 export class ProjectInput {
 	templateEl: HTMLTemplateElement;
@@ -31,16 +31,16 @@ export class ProjectInput {
 		this.hostEl.appendChild(this.formEl);
 	}
 
-	@autoBind
+	@Autobind
 	submitHandler(e: Event) {
 		e.preventDefault();
-		const projectData = validation(
+		const projectData = validate.validation(
 			this.title.value,
 			this.description.value,
 			+this.people.value
 		);
 		if (projectData) {
-			new ProjectItem(projectData);
+			new prjItem(projectData);
 			this.title.value = '';
 			this.description.value = '';
 			this.people.value = '';

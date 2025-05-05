@@ -1,7 +1,9 @@
 import { autoBind } from '../decorators/autobind.js';
 import { DataObject } from '../utility/validation.js';
 
-export class ProjectItem {
+export const something = 'something'; // es imistvis weria ro prosta gasagebi ikos ro default exporti ert fileshi marto erti rame sheidzleba ikos da danarcheni chveulebrivi exportit unda dgaexportdes.
+
+export default class ProjectItem {
 	data: DataObject;
 	templateEl: HTMLTemplateElement;
 	itemEl: HTMLLIElement;
