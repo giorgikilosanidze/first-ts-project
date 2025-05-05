@@ -1,4 +1,4 @@
-import prjItem from './project.item.js'; // es default exportis shemoimporteba roca xdeba.
+import prjItem from './project.item.js'; // es default exportis shemoimporteba roca xdeba. da saxeli rac ginda is shegilia daarkva egreve. as-is dachera ar chirdeba.
 import { autoBind as Autobind } from '../decorators/autobind.js'; // es saxelis gadarkmevaa.
 import * as validate from '../utility/validation.js'; // ak validacia isedac erti funkciaa marto mara ramdenime rame ro kopiliko shemosaimportebeli es gamodgeboda. kvelapers aimporteb saxels arkmev rasac ginda da wertilit wvdebi mere konkretul funkcias an nebismier ragacas. kvemot weria validate funkciaze magaliti.
 

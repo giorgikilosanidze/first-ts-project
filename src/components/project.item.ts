@@ -1,5 +1,5 @@
 import { autoBind } from '../decorators/autobind.js';
-import { DataObject } from '../utility/validation.js';
+import { type DataObject } from '../utility/validation.js'; // rodesac typebs da interfacebs vaimportebt xandaxan sachiroa ro win davuwerot type keyword, gaachnia proektis setups da build tools. dziritadad araris sachiro da rekomendirebuli, magram xandaxan aucilebelia. tu prchxilebis shignit davwert types gamodis ro konkretulad ris winac davwert imaze vambobt ro type an interfaceia magram tu prchxilebis garet davwert eseigi vgulisxmobt ro prchxilebis shignit kvelaperi type an interfaceia. es xandaxan sachiroa imistvis ro typescriptistvis an build toolistvis gasagebi ikos ro rac shemovaimportet marto typescriptis featuria da araris iseti kodi romlis kompilaciac xdeba javasckriptis kodshi.
 
 export const something = 'something'; // es imistvis weria ro prosta gasagebi ikos ro default exporti ert fileshi marto erti rame sheidzleba ikos da danarcheni chveulebrivi exportit unda dgaexportdes.
 
